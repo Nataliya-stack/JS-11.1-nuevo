@@ -1,14 +1,12 @@
-// Простая функция для проверки, является ли число простым
 function isPrime(num) {
-  if (num <= 1) return false; // Числа 1, 0 и отрицательные — не простые
-  
-  // Проверяем все числа от 2 до num - 1
+  if (num <= 1) return false; 
+
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
-      return false; // Если нашли делитель, число не простое
+      return false; 
     }
   }
-  return true; // Если делителей нет, число простое
+  return true; 
 }
 
 function result() {
